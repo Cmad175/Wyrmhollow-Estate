@@ -7,7 +7,6 @@ public class EffectScriptableObject : ScriptableObject
     [SerializeField] private EffectTargetArea effectTargetArea;
     [SerializeField] private EffectRateType effectRateType;
     
-    
     [SerializeField] private float amount;
     
     [ShowIf("effectRateType", EffectRateType.OverTime)]

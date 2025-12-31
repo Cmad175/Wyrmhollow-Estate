@@ -6338,10 +6338,10 @@ GameObject:
   m_Component:
   - component: {fileID: 5519805659164561539}
   - component: {fileID: 5519805659164834861}
-  - component: {fileID: 5519805659164834860}
   - component: {fileID: 5519805659164834862}
   - component: {fileID: 5519805659164834864}
   - component: {fileID: 5519805659164834863}
+  - component: {fileID: 5519805659164834865}
   m_Layer: 0
   m_Name: Weapon
   m_TagString: Untagged
@@ -6349,28 +6349,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!95 &5519805659164834860
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5519805659164834859}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a00ac4ac8f78d3f4a84a52821008ed01, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &5519805659164834861
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6384,7 +6362,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WeaponBase
   effectList:
+  - {fileID: 11400000, guid: 6fa3482627e910c468022c230b2132a2, type: 2}
   - {fileID: 11400000, guid: 24f0b0504702bff4495f1197d10e44e2, type: 2}
+  weaponStats: {fileID: 11400000, guid: 7e238187c9a4bda4d9bd69a8d62d71e1, type: 2}
 --- !u!65 &5519805659164834862
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6463,6 +6443,28 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!95 &5519805659164834865
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5519805659164834859}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a00ac4ac8f78d3f4a84a52821008ed01, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
